@@ -1,0 +1,30 @@
+{
+    "packageRules": [
+        {
+            "description": "Group Go dependencies",
+            "matchDatasources": [
+                "go"
+            ],
+            "groupName": "Go modules",
+            "groupSlug": "gomod",
+            "separateMajorMinor": false
+        },
+        {
+            "description": "Automerge Docker images",
+            "matchDatasources": [
+                "docker"
+            ],
+            "automerge": true
+        },
+        {
+            "description": "Enable major Docker upgrades",
+            "matchDatasources": [
+                "docker"
+            ],
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "enabled": true
+        }
+    ]
+}
