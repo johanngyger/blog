@@ -293,6 +293,10 @@ to preserve quality, and produced identical output in the greedy benchmark above
 remaining quality levers are the samplers, the thinking budget, a good system prompt, and
 enough context.
 
+> **Update (3 July 2026):** I have since [tried the dense Qwen 3.6 27B
+> anyway](2026-07-03-qwen-27b-dense.md); it fits, but at ~9 tok/s the bandwidth
+> arithmetic above holds.
+
 ## Does it actually work as an agent?
 
 The real test is not chat, it is the tool loop. Given a file with a deliberately broken
